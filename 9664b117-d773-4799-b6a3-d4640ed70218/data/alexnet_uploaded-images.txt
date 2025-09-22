@@ -1,0 +1,100 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+Number of key-value pairs in dictionary:  6
+
+First 10 file names from folder pet_images
+Filename=  Bucket_01.jpg                           ,    Label= bucket
+Filename=  Dog_02.jpg                              ,    Label= dog
+Filename=  Coffee_mug.jpg                          ,    Label= coffee
+Filename=  Frog_01.jpg                             ,    Label= frog
+Filename=  Black_bear_01.jpg                       ,    Label= black bear
+Filename=  Dog_01.jpg                              ,    Label= dog
+
+Pet Image Label Dictionary has 6 key-value pairs.
+Below are 6 of them:
+ 1 key:                  Bucket_01.jpg  label:                     bucket
+ 2 key:                     Dog_02.jpg  label:                        dog
+ 3 key:                 Coffee_mug.jpg  label:                     coffee
+ 4 key:                    Frog_01.jpg  label:                       frog
+ 5 key:              Black_bear_01.jpg  label:                 black bear
+ 6 key:                     Dog_01.jpg  label:                        dog
+
+     MATCH:
+
+                 Bucket_01.jpg: 
+Real:                     bucket   Classifier:                         bucket
+
+             Black_bear_01.jpg: 
+Real:                 black bear   Classifier:                     black bear
+
+ NOT A MATCH:
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:               golden retriever
+
+                Coffee_mug.jpg: 
+Real:                     coffee   Classifier:                     coffee mug
+
+                   Frog_01.jpg: 
+Real:                       frog   Classifier:                  ascaphus trui
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:               golden retriever
+
+# Total Images 6 # Matches: 2 # NOT Matches: 4
+
+     MATCH:
+
+                 Bucket_01.jpg: 
+Real:                     bucket   Classifier:                         bucket  
+PetLabelDog: 0  ClassLabelDog: 0
+
+             Black_bear_01.jpg: 
+Real:                 black bear   Classifier:                     black bear  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:               golden retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                Coffee_mug.jpg: 
+Real:                     coffee   Classifier:                     coffee mug  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                   Frog_01.jpg: 
+Real:                       frog   Classifier:                  ascaphus trui  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:               golden retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 6 # Matches: 2 # NOT Matches: 4
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  6  N Dog Images:  2  N NotDog Images:  4 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  6  N Dog Images:  2  N NotDog Images:  4 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+CNN Model Architecture: alexnet
+Number of Images: 6
+Number of Dog Images: 2
+Number of "Not-a" Dog Images: 4
+% Correct Notdogs: 100.0%
+% Correct Dogs: 100.0%
+% Correct Breed: 0.0%
+% Label Match: 33.3%
+Incorrect dogs classification - 
+Incorrect breed classification - 
+['dog', 'golden retriever']
+['dog', 'golden retriever']
+
+** Total Elapsed Runtime: 0:0:0
